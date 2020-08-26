@@ -42,7 +42,7 @@ func isField(buf []byte) bool {
 // ScanBalancedPatternLiteral attempts to scan parentheses as literal patterns.
 // It returns the scanned string, how much to advance, and whether it succeeded.
 // Basically it scans any literal string, including whitespace, but ensures that
-// a resulting string does not contain 'and' or 'or keywords, nor paramters, and
+// a resulting string does not contain 'and' or 'or keywords, nor parameters, and
 // is balanced.
 func ScanBalancedPatternLiteral(buf []byte) (scanned string, count int, ok bool) {
 	var advance, balanced int
